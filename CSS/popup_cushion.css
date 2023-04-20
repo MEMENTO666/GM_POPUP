@@ -1,0 +1,25 @@
+#popup_cushion {
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+  flex-direction: column;
+
+}
+
+#popup_cushion > div:nth-child(1) {
+  width:420px;
+  height:520px;
+  /* border: 1px solid black; */
+  background-image: url(../asset/popup_cushion.avif);
+  background-size: cover;
+}
+
+#popup_cushion > div:nth-child(2) {
+  width: 470px;
+  border: 1px solid black;
+  font-size: 13px;
+  padding: 30px;
+  color: #00000080;
+}

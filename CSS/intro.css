@@ -1,0 +1,24 @@
+#intro {
+  width:100vw;
+  border: 1px solid black;
+}
+
+#intro > video {
+  width: 100%;
+}
+
+.GM_POPUP_02 {
+  display: none;
+}
+
+
+@media screen and (max-width:900px) {
+  .GM_POPUP_01 {
+    display: none;
+  }
+
+  .GM_POPUP_02 {
+    display: unset;
+  }
+  
+}
