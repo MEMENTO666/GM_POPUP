@@ -12,3 +12,9 @@
 #visit_store_text > p {
   margin: 0;
 }
+
+@media screen and (max-width:768px) {
+  #visit_store_text {
+    font-size: 13px;
+  }
+}

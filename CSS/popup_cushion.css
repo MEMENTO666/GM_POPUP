@@ -14,11 +14,11 @@
   /* border: 1px solid black; */
   background-image: url(../asset/popup_cushion.avif);
   background-size: cover;
+  background-position: center;
 }
 
 #popup_cushion > div:nth-child(2) {
   width: 470px;
-  /* border: 1px solid black; */
   font-size: 13px;
   padding: 30px;
   color: #00000080;
@@ -29,6 +29,19 @@
 }
 
 @media screen and (max-width:768px) {
+  #popup_cushion > div:nth-child(1) {
+    width:350px;
+  }
+
+  #popup_cushion > div:nth-child(2) {
+    width: 350px;
+    font-size: 13px;
+    padding: 20px;
+    color: #00000080;
+  }
+  
+  
+  
   #popup_cushion > div:nth-child(2) > p {
     font-size: 10.5px;
   }

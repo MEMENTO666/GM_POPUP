@@ -45,7 +45,7 @@
 .accordion-button > p {
   margin: 0;
   overflow-y: hidden;
-  font-size: 14px;
+  font-size: 12.5px;
   font-weight: bold;
 }
 
@@ -53,9 +53,21 @@
   width:97vw;
 }
 
+.accordion-button::after {
+  background-image:url(../asset/PLUS.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 12px;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image:url(../asset/MINUS.png);
+  background-position: center;
+}
+
 .accordion-body {
   list-style: none;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 30px;
   color: #858585;
 }
@@ -106,10 +118,6 @@
   }
   
   .footer_list {
-    /* flex-direction: column;
-    padding: 15px 15px 0px;
-    height:15vh;
-    justify-content: center; */
     display: none;
 
   }
