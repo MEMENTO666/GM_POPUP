@@ -5,7 +5,7 @@
   justify-content: center;
   padding: 80px;
   flex-direction: column;
-
+  background-image: linear-gradient(to bottom, rgba(220, 215, 199, 0) 18%, rgba(220, 215, 199, 0.25) 100%);
 }
 
 #popup_cushion > div:nth-child(1) {
@@ -18,8 +18,19 @@
 
 #popup_cushion > div:nth-child(2) {
   width: 470px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   font-size: 13px;
   padding: 30px;
   color: #00000080;
+}
+
+#popup_cushion > div:nth-child(2) > p {
+  margin: 0;
+}
+
+@media screen and (max-width:768px) {
+  #popup_cushion > div:nth-child(2) > p {
+    font-size: 10.5px;
+  }
+  
 }

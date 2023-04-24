@@ -1,10 +1,14 @@
 #visit_store_text {
   width:100%;
-  height: 150px;
+  height: 85px;
   display: flex;
-  align-items: center;
+  align-items:center;
   justify-content: center;
   font-weight: bold;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   font-size: 15px;
+}
+
+#visit_store_text > p {
+  margin: 0;
 }

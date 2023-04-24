@@ -11,4 +11,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "SD_gothic";
+  
+}
+
+@font-face {
+  font-family:"SD_gothic";
+  src: url(../asset/font/SDGothicNeoaTTF-eMd.woff);
+  
 }

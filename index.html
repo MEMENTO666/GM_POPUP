@@ -11,6 +11,7 @@
   <iconify-icon icon="ic:outline-navigate-next"></iconify-icon>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js">
   </script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
   <link rel="stylesheet" href="CSS/wrapper.css"/>
   <link rel="stylesheet" href="CSS/header.css"/>
@@ -19,6 +20,9 @@
   <link rel="stylesheet" href="CSS/popup_cushion.css"/>
   <link rel="stylesheet" href="CSS/visit_store_text.css"/>
   <link rel="stylesheet" href="CSS/swiper.css"/>
+  <link rel="stylesheet" href="CSS/popup_area_info.css"/>
+  <link rel="stylesheet" href="CSS/cooper_campaign.css"/>
+  <link rel="stylesheet" href="CSS/footer.css"/>
 
 
   <title>GM_POPUP</title>
@@ -65,7 +69,8 @@
       </div>
       <div class="text_02">
         <p>
-          Maison Margiela x Gentle Monster의 협업 컬렉션을 기념하여 전 세계 7개 도시에서 팝업을 진행합니다. Maison Margiela 의 고유한 아이덴티티인 블랙 마스크, 정제되지 않은 듯한 실과 패브릭 요소들을 오브제와 공간 디테일에 담아 Gentle Monster만의 독보적인 감각으로 재해석하였습니다. 두 브랜드의 인상적인 만남을 경험해 보세요.
+          <span>Maison Margiela x Gentle Monster</span>의 협업 컬렉션을 기념하여 전 세계 7개 도시에서 팝업을 진행합니다. 
+          <span>Maison Margiela</span>의 고유한 아이덴티티인 블랙 마스크, 정제되지 않은 듯한 실과 패브릭 요소들을 오브제와 공간 디테일에 담아 <span>Gentle Monster</span>만의 독보적인 감각으로 재해석하였습니다. 두 브랜드의 인상적인 만남을 경험해 보세요.
         </p>
       </div>
     </div>
@@ -87,32 +92,43 @@
           <!-- Slides -->
           <div class="swiper-slide">
             <video autoplay loop muted playsinline > 
-              <source src="asset/store_video_pc.mp4" type="video/mp4">
+              <source  class="slide_video_pc" src="asset/store_video_pc.mp4" type="video/mp4">
+            </video>
+            <video autoplay loop muted playsinline > 
+              <source class="slide_video_mb" src="asset/store_video_mb.mp4" type="video/mp4">
             </video>
           </div>
           <div class="swiper-slide">
-            <img src="./asset/pc_1.avif">
+            <img class="slide_img_pc" src="./asset/pc_1.avif">
+            <img class="slide_img_mb" src="./asset/mo_1.avif">
           </div>
           <div class="swiper-slide">
-            <img src="./asset/pc_2.avif">
+            <img class="slide_img_pc" src="./asset/pc_2.avif">
+            <img class="slide_img_mb" src="./asset/mo_2.avif">
           </div>
           <div class="swiper-slide">
-            <img src="./asset/pc_3.avif">
+            <img class="slide_img_pc" src="./asset/pc_3.avif">
+            <img class="slide_img_mb" src="./asset/mo_3.avif">
           </div>
           <div class="swiper-slide">
-            <img src="./asset/pc_4.avif">
+            <img class="slide_img_pc" src="./asset/pc_4.avif">
+            <img class="slide_img_mb" src="./asset/mo_4.avif">
           </div>
           <div class="swiper-slide">
-            <img src="./asset/pc_5.avif">
+            <img class="slide_img_pc" src="./asset/pc_5.avif">
+            <img class="slide_img_mb" src="./asset/mo_5.avif">
           </div>
           <div class="swiper-slide">
-            <img src="./asset/pc_6.avif">
+            <img class="slide_img_pc" src="./asset/pc_6.avif">
+            <img class="slide_img_mb" src="./asset/mo_6.avif">
           </div>
           <div class="swiper-slide">
-            <img src="./asset/pc_7.avif">
+            <img class="slide_img_pc" src="./asset/pc_7.avif">
+            <img class="slide_img_mb" src="./asset/mo_7.avif">
           </div>
           <div class="swiper-slide">
-            <img src="./asset/pc_8.avif">
+            <img class="slide_img_pc" src="./asset/pc_8.avif">
+            <img class="slide_img_mb" src="./asset/mo_8.avif">
           </div>
           
         </div>
@@ -129,17 +145,189 @@
         <div class="swiper-scrollbar"></div>
       </div>
     </div>
+    <div id="popup_area_info">
+      <div>
+        <p>하우스 도산,서울</p>
+        <p><span style="font-weight: bold;">서울시 강남구 압구정로 46길 50</span></p>
+        <br>
+        <p>2023년 2월 28일–4월 30일</p>
+        <p>월요일–일요일, 11am–9pm</p>
+        <br>
+        <p class="map">지도보기</p>
+      </div>
+      <div>
+        <p>하우스 상하이</p>
+        <p>798-812, Mid-HuaiHai Rd., Huangpu District, Shanghai, China</p>
+        <br>
+        <p>2023년 2월 28일–4월 21일</p>
+        <p>월요일–일요일, 10am–10pm</p>
+        <br>
+        <p class="map">지도보기</p>
+      </div>
+      <div>
+        <p>젠틀몬스터 뉴욕</p>
+        <p>70 Wooster Street, New York, NY 10012, United States</p>
+        <br>
+        <p>2023년 2월 28일–4월 30일</p>
+        <p>월요일–토요일, 11am–7pm  일요일, 12pm–7pm</p>
+        <br>
+        <p class="map">지도보기</p>
+      </div>
+      <div>
+        <p>젠틀몬스터 런던 SELFRIDGES</p>
+        <p>Selfridges, 400 Oxford St, London W1A 1AB UK</p>
+        <br>
+        <p>2023년 2월 27일–3월 19일</p>
+        <p>월요일–금요일, 9:30am–10pm  토요일, 9:30am–9pm  일요일, 11:30am–6pm</p>
+        <br>
+        <p class="map">지도보기</p>
+      </div>
+      <div>
+        <p>젠틀몬스터 베이징 산리툰 타이쿠리</p>
+        <p>1F S10-15, 2F S10-23 & 3F S10-32, South Zone, Taikoo Li Sanlitun,</p>
+        <p>19# Sanlitun Rd, Chaoyang District, Beijing, China</p>
+        <br>
+        <p>2023년 2월 28일–4월 21일</p>
+        <p>월요일–일요일, 10am–10pm</p>
+        <br>
+        <p class="map">지도보기</p>
+      </div>
+      <div>
+        <p>젠틀몬스터 싱가포르 MBS</p>
+        <p>2 BAYFRONT Avenue, #B2-103/104/105, 018972 Singapore</p>
+        <br>
+        <p>2023년 2월 28일–4월 30일</p>
+        <p>일요일–목요일, 10:30am–10pm/금요일–토요일, 10:30am–11pm</p>
+        <br>
+        <p class="map">지도보기</p>
+      </div>
+      <div>
+        <p>하우스 도산,서울</p>
+        <p>서울시 강남구 압구정로 46길 50</p>
+        <br>
+        <p>2023년 2월 28일–4월 30일</p>
+        <p>월요일–일요일, 11am–9pm</p>
+        <br>
+        <p class="map">지도보기</p>
+      </div>
+      
+    </div>
 
+    <div id="cooper_campaign">
+      <div>협업 제품 구매하기</div>
+      <div>캠페인 보러가기</div>
+    </div>
+
+    <div id="footer">
+      <div class="footer_list">
+        <ul><p>고객 서비스</p>
+          <li>문의</li>
+          <li>배송</li>
+          <li>서비스</li>
+          <li>교환 및 반품</li>
+          <li>주문조회</li>
+          <li>주문취소</li>
+          <li>매장 픽업 서비스</li>
+          <li>수리서비스 가이드</li>
+          <li>제품 사용 가이드</li>
+          <li>시리얼 넘버 조회</li>
+        </ul>
+      </div>
+      <div class="footer_list">
+        <ul><p>법적 고지</p>
+          <li>공지사항</li>
+          <li>이용약관</li>
+          <li>개인정보처리방침</li>
+          <li>쿠키정책</li>
+          <li>기프트카드 이용약관</li>
+        </ul>
+      </div>
+      <div class="footer_list">
+        <ul><p>소셜 미디어</p>
+          <li>페이스북</li>
+          <li>인스타그램</li>
+          <li>유튜브</li>
+          <li>트위터</li>
+          <li>카카오톡</li>
+          <li>핀터레스트</li>
+          <li>위쳇</li>
+          <li>웨이보</li>
+        </ul>
+      </div>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <p>고객 서비스</p>
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <li>문의</li>
+              <li>배송</li>
+              <li>서비스</li>
+              <li>교환 및 반품</li>
+              <li>주문조회</li>
+              <li>주문취소</li>
+              <li>매장 픽업 서비스</li>
+              <li>수리서비스 가이드</li>
+              <li>제품 사용 가이드</li>
+              <li>시리얼 넘버 조회</li>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              <p>법적 고지</p>
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <li>공지사항</li>
+              <li>이용약관</li>
+              <li>개인정보처리방침</li>
+              <li>쿠키 정책</li>
+              <li>기프트카드 이용약관</li>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              <p>소셜 미디어</p>
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <li>페이스북</li>
+              <li>인스타그램</li>
+              <li>유튜브</li>
+              <li>트위터</li>
+              <li>카카오톡</li>
+              <li>핀터레스트</li>
+              <li>위쳇</li>
+              <li>웨이보</li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="copyright">
+      <div><p>©2023 GENTLE MONSTER</p></div>
+      <div>
+      <p>
+      주) Anonymous | 대표자명: Anonymous | 사업자번호: 119-666-888 | 통신판매신고번호: 제 2023-대전서구-666 호 (사업자 정보 확인) | 개인정보보호책임자: Anonymous | 주소: 대전광역시 | 대표번호: XXXX-XXXX
+      </p>
+      </div>
+    </div>
+  </div>
     
-    
-    
-    
-    
+
     
   </div>
   
-
-
 
   <script type="module">
     import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
@@ -161,5 +349,6 @@
 
 });
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>

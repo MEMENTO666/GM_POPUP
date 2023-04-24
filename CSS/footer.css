@@ -1,0 +1,157 @@
+#footer {
+  width:100vw;
+  height:50vh;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  background-color: white;
+  padding:0px 50px 0px 50px;
+
+}
+
+.footer_list {
+  width:300px;
+  height: 45vh;
+  /* border: 1px solid black; */
+  font-weight: bold;
+  padding:50px 50px 0px 50px;
+}
+
+.footer_list > ul  {
+  font-size: 13px;
+  padding:0 0 16px;
+  color: #343434;
+}
+
+.footer_list > ul > p {
+  margin-bottom: 15px;
+}
+
+.footer_list > ul > li {
+  font-size: 11.5px;
+  padding: 7px 0px 4px;
+  color: rgb(150, 150, 150);
+  cursor: pointer;
+
+
+}
+
+.accordion {
+  --bs-accordion-active-color: black;
+  --bs-accordion-active-bg: #ffffff;
+
+}
+
+.accordion-button > p {
+  margin: 0;
+  overflow-y: hidden;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.accordion-button {
+  width:97vw;
+}
+
+.accordion-body {
+  list-style: none;
+  font-size: 13px;
+  line-height: 30px;
+  color: #858585;
+}
+
+.accordion-body > li {
+  cursor: pointer;
+  width:fit-content;
+}
+
+
+#copyright {
+  width:100vw;
+  height:100px;
+  /* border: 1px solid black; */
+  display: flex;
+  padding:0px 50px 0px 50px;
+  background-color: white;
+  color: #343434;
+
+}
+
+#copyright > div:nth-child(1) {
+  width:250px;
+  height: auto;
+  /* background-color: blue; */
+  font-size: 14px;
+  font-weight: bold;
+  padding:0px 0px 0px 50px;
+
+}
+
+#copyright > div:nth-child(2) {
+  width:70%;
+  height: auto;
+  /* background-color: red; */
+  font-size: 10.5px;
+  line-height: 20px;
+  padding: 0px 0px 0px 30px;
+  
+}
+
+@media screen and (max-width:768px) {
+
+  #footer {
+    /* border: 1px solid black; */
+    height: auto;
+    padding: 0px 0px 0px 10px;
+  }
+  
+  .footer_list {
+    /* flex-direction: column;
+    padding: 15px 15px 0px;
+    height:15vh;
+    justify-content: center; */
+    display: none;
+
+  }
+
+ 
+  #copyright {
+    width:90vw;
+    height:150px;
+    padding:0px;
+    flex-direction: column;
+    margin-top: 30px;
+  
+  }
+
+  #copyright > div:nth-child(1) {
+    width:250px;
+    height: 50px;
+    /* background-color: blue; */
+    font-size: 14px;
+    font-weight: bold;
+    padding:0px;
+    /* padding-left: 30px; */
+    display: flex;
+    align-items: center;
+  
+  }
+
+  #copyright > div:nth-child(2) {
+    width:100%;
+    height:auto;
+    /* background-color: red; */
+    padding: 0px;
+    /* padding-left: 30px; */
+    
+  }
+  
+}
+
+@media screen and (min-width:769px) {
+  #accordionFlushExample {
+    display: none;
+  }
+
+}
+

@@ -1,0 +1,36 @@
+#cooper_campaign {
+  width:100%;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px;
+  background-image: linear-gradient(to bottom, rgba(220, 215, 199, 0) 18%, rgba(220, 215, 199, 0.25) 100%);
+}
+
+#cooper_campaign > div {
+  width:200px;
+  height: 50px;
+  border: solid 0.7px #c2bfb1;
+  border-radius: 7px;
+  margin: 10px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width:768px) {
+  #cooper_campaign {
+    padding: 60px;
+  }
+
+  #cooper_campaign > div {
+    width:170px;
+    height:40px;
+    font-size: 13px;
+  }
+  
+  
+}

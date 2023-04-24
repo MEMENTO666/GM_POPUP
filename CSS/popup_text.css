@@ -1,38 +1,82 @@
 #popup_text {
   width: 100%;
-  height:300px;
+  /* height:300px; */
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0px 100px 0px;
-  background-color: rgb(233, 233, 233);
+  padding:100px 0px;
+  background-image: linear-gradient(to bottom, rgba(220, 215, 199, 0) 18%, rgba(220, 215, 199, 0.25) 100%);
+}
+
+@font-face {
+  font-family: "goudy";
+  src:url(../asset/font/Rosha-Keylin.woff)
 }
 
 .text_01 {
-  color: red;
-  border: 1px solid black;
-  width: 100vw;
-  height: 120px;
+  color: #383838;
+  /* border: 1px solid black; */
   font-size: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow-y: hidden;
+  font-family: "goudy";
+  font-weight: 200;
+  max-width: 750px;
+  
 }
 
+.text_01 > p {
+  margin: 0;
+}
+
+
 .text_02 {
-  color:blue;
-  border: 1px solid black;
-  width: 100vw;
-  /* height: 120px; */
+  /* border: 1px solid black; */
   font-size: 13px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px;
+  /* padding: 0px 120px 120px; */
   line-height: 30px;
   overflow-y: hidden;
+  max-width: 750px;
+
+}
+
+.text_02 > p {
+  margin: 0;
+}
+
+.text_02 > p > span {
+  font-family: "goudy";
+  font-weight: 800;
+
+}
+
+@media screen and (max-width:768px) {
+  #popup_text {
+    width: 100%;
+    /* height:300px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 12px;
+  }
+  
+  
+  .text_01 {
+    font-size: 34px;
+  }
+
+  .text_02 {
+    font-size: 13px;
+    padding: 30px;
+  }
+  
 }
 
 

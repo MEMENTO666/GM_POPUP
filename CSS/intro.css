@@ -1,10 +1,18 @@
 #intro {
   width:100vw;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 #intro > video {
   width: 100%;
+  outline: none;
+  border: 0;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  mask-image: -webkit-radial-gradient(white, black);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .GM_POPUP_02 {
